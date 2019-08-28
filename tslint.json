@@ -21,6 +21,8 @@
     "object-literal-sort-keys": false,
     "arrow-parens": false,
     "array-type": false,
+    "only-arrow-functions": false,
+    "space-before-function-paren": false,
     "member-ordering": [
       true,
       {
@@ -56,11 +58,7 @@
       "ignore-params"
     ],
     "no-switch-case-fall-through": true,
-    "typedef": [
-      true,
-      "call-signature",
-      "parameter"
-    ],
+    "typedef": false,
     "trailing-comma": [
       true,
       {
@@ -93,7 +91,7 @@
     "no-unused-expression": true,
     "no-var-keyword": true,
     "no-unused-variable": true,
-    "no-unbound-method": true,
+    "no-unbound-method": false,
     "one-line": [
       true,
       "check-open-brace",

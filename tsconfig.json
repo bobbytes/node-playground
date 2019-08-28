@@ -2,7 +2,7 @@
   "compilerOptions": {
     "declaration": true,
     "declarationDir": ".tmp",
-    "module": "es6",
+    "module": "commonjs",
     "noImplicitAny": false,
     "outDir": ".tmp",
     "target": "es5",
