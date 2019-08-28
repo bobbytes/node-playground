@@ -1,0 +1,28 @@
+{
+  "name": "node-playground",
+  "version": "0.0.1",
+  "description": "node playground",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "tslint --project tsconfig.json --format stylish"
+  },
+  "keywords": [],
+  "engines": {
+    "node": ">=8.15.1"
+  },
+  "contributors": [
+    {
+      "name": "Robert Kleger",
+      "email": "robert.kleger@bobb.io"
+    }
+  ],
+  "repository": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^12.7.2",
+    "ts-node": "^8.3.0",
+    "tslint": "^5.16.0",
+    "typescript": "^3.4.4"
+  },
+  "dependencies": {}
+}
