@@ -8,35 +8,13 @@
  * Close: handle closed connections like sockets
  */
 
-const racer1 =  () => {
+const racer =  () => {
   setTimeout(() => console.log('timeout'), 0);
   setImmediate(() => console.log('immediate'));
   process.nextTick(() => console.log('nextTick'));
   console.log('current event loop');
 };
 
-const racer2 =  () => {
-  setTimeout(() => console.log('timeout'), 0);
-  setImmediate(() => console.log('immediate'));
-  process.nextTick(() => console.log('nextTick'));
-  console.log('current event loop');
-};
-
-const racer3 =  () => {
-  setTimeout(() => console.log('timeout'), 0);
-  setImmediate(() => console.log('immediate'));
-  process.nextTick(() => console.log('nextTick'));
-  console.log('current event loop');
-};
-
-const racer4 =  () => {
-  setTimeout(() => console.log('timeout'), 0);
-  setImmediate(() => console.log('immediate'));
-  process.nextTick(() => console.log('nextTick'));
-  console.log('current event loop');
-};
-
-racer1();
-racer2();
-racer3();
-racer4();
+for (let index = 1; index <= 4; index++) {
+  racer();
+}
