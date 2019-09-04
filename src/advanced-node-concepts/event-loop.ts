@@ -9,6 +9,8 @@
  */
 
 const racer =  () => {
+  process.on('exit', () => console.log('exit'));
+  setTimeout(() => console.log('timeout long'), 5000);
   setTimeout(() => console.log('timeout'), 0);
   setImmediate(() => console.log('immediate'));
   process.nextTick(() => console.log('nextTick'));
